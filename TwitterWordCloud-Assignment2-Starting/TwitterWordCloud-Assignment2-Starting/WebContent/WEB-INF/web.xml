@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>TwitterWordCloud</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UpdateUsername</display-name>
+    <servlet-name>UpdateUsername</servlet-name>
+    <servlet-class>com.ajax.servelets.UpdateUsername</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUsername</servlet-name>
+    <url-pattern>/UpdateUsername</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Tweet</display-name>
+    <servlet-name>Tweet</servlet-name>
+    <servlet-class>Tweet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tweet</servlet-name>
+    <url-pattern>/Tweet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>TweetStream</display-name>
+    <servlet-name>TweetStream</servlet-name>
+    <servlet-class>TweetStream</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TweetStream</servlet-name>
+    <url-pattern>/TweetStream</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>PositiveSentimentStats</display-name>
+    <servlet-name>PositiveSentimentStats</servlet-name>
+    <servlet-class>PositiveSentimentStats</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PositiveSentimentStats</servlet-name>
+    <url-pattern>/PositiveSentimentStats</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

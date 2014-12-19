@@ -1,0 +1,30 @@
+#wrapper, #left, .right {display: inline-block;}
+#wrapper, #left, .right {display: inline !ie7;}
+
+#wrapper {
+    width: 100%; 
+    background: #cfc; 
+    white-space: nowrap; 
+    word-spacing: -4px;
+}
+
+#left > div, .right > div {
+    word-spacing: 0; 
+    white-space: normal; /* IE7 would only take white-space correction on a nested div ?? */
+}
+#left {
+    min-height: 350px; 
+    width: 80%; 
+    background: #eee;
+}
+
+.right {
+    width: 20%; 
+    background: #EDEDE5; 
+    vertical-align: top;
+}
+
+.bot {
+    vertical-align: bottom; 
+    margin-left: -20%; /* negative right column width */
+}

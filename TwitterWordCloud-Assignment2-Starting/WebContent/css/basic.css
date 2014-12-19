@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #FFFFFF;
+	text-align: center;
+}
+p.large {
+	font-size: 20px;
+}
+p.small {
+	font-size: 15px;
+}
+p#displayName {
+	display: none;
+}
+
+table, th {
+   vertical-align: center;
+   padding: 15px;
+}
+
+td {
+    padding: 15px;
+    height: 50px;
+    vertical-align: bottom;
+    text-align: right;
+    border: 1px solid black;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
